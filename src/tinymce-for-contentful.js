@@ -19,8 +19,7 @@ window.contentfulExtension.init(function(api) {
     tinymce.init({
       selector: "#editor",
       plugins: api.parameters.instance.plugins,
-      toolbar: "undo redo | formatselect | bold underline | alignleft aligncenter alignright alignjustify | numlist bullist outdent indent | code"
-  //  images_upload_url: 'zugportal.asd/postAcceptor.php'
+      toolbar: 'undo redo | formatselect | bold underline |  aligncenter alignjustify | numlist bullist outdent indent | code',
       menubar: mb,
       max_height: 500,
       min_height: 600,
