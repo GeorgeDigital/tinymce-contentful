@@ -1,7 +1,7 @@
 {
   "id": "TinyMCE",
   "name": "TinyMCE",
-  "src": "src/",
+  "src": "",
   "fieldTypes": ["Text"],
   "parameters": {
     "installation": [
