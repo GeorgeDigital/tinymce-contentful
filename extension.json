@@ -1,7 +1,7 @@
 {
   "id": "TinyMCE",
   "name": "TinyMCE",
-  "src": "https://github.com/GeorgeDigital/tinymce-contentful/blob/master/src/index.html",
+  "src": "https://testtiny.s3.eu-central-1.amazonaws.com/test/index.html",
   "fieldTypes": ["Text"],
   "parameters": {
     "installation": [
