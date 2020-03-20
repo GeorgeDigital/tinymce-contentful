@@ -20,11 +20,12 @@ window.contentfulExtension.init(function(api) {
       selector: "#editor",
       plugins: api.parameters.instance.plugins,
       toolbar: tb,
+  //  images_upload_url: 'zugportal.asd/postAcceptor.php'
       menubar: mb,
       max_height: 500,
-      min_height: 300,
+      min_height: 600,
       autoresize_bottom_margin: 15,
-      resize: false,
+      resize: true,
       image_caption: true,
       init_instance_callback : function(editor) {
         var listening = true;
