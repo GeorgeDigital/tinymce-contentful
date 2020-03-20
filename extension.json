@@ -1,7 +1,7 @@
 {
   "id": "TinyMCE",
   "name": "TinyMCE",
-  "src": "https://github.com/GeorgeDigital/tinymce-contentful/tree/master/src",
+  "src": "https://github.com/GeorgeDigital/tinymce-contentful/tree/master/src/",
   "fieldTypes": ["Text"],
   "parameters": {
     "installation": [
