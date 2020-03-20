@@ -18,14 +18,48 @@ window.contentfulExtension.init(function(api) {
 
     tinymce.init({
       selector: "#editor",
-      plugins: api.parameters.instance.plugins,
-      toolbar: 'bold underline | link image',
-      menubar: mb,
-      max_height: 800,
+      // plugins: api.parameters.instance.plugins,
+      // toolbar: tb,
+      // menubar: mb,
+      
+       language: 'de',
+ 
+      browser_spellcheck: true,
+      plugins: 'paste code autolink image imagetools link media table hr lists wordcount',
+
+      // menubar: 'file edit insert view format table tools help',
+      menubar: 'edit insert',
+      menu: {
+        file: { title: 'Datei', items: 'newdocument restoredraft | preview | print ' },
+        edit: { title: 'Bearbeiten', items: 'undo redo | cut copy paste | selectall | searchreplace | code' },
+        view: { title: 'Ansicht', items: 'code | wordcount' },
+        insert: { title: 'Einfügen', items: 'link image media hr inserttable' },
+        format: { title: 'Format', items: 'strikethrough superscript subscript codeformat' },
+        tools: { title: 'Werkzeuge', items: 'spellchecker spellcheckerlanguage | code wordcount' },
+        table: { title: 'Tabelle', items: 'inserttable | cell row column | tableprops deletetable' },
+        help: { title: 'Hilfe', items: 'help' }
+      },
+      // toolbar: 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl',
+      toolbar: 'formatselect bold italic underline indent outdent  numlist bullist removeformat image',
+      toolbar_sticky: true,
+      image_advtab: false,
+      image_title: true,
+      image_caption: false,
+      image_description: false,
+      block_formats: 'Absatz=p; Überschrift 1=h1; Überschrift 2=h2; Überschrift 3=h3',
+      content_css: '//www.tiny.cloud/css/codepen.min.css',
+      importcss_append: true,
       min_height: 300,
-      autoresize_bottom_margin: 15,
-      resize: true,
-      image_caption: true,
+      min_width: 500,
+      height: 300,
+      width: 800,
+      max_height: 1000,
+      max_width: 1000,
+      paste_data_images: true,
+
+      resize: 'both',
+      toolbar_mode: 'wrap',
+      
       init_instance_callback : function(editor) {
         var listening = true;
 
