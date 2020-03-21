@@ -1,7 +1,7 @@
 {
   "id": "TinyMCE",
   "name": "TinyMCE",
-  "src": "https://testtiny.s3.eu-central-1.amazonaws.com/test/index.html",
+  "src": "https://tinycontent.000webhostapp.com/src/index.html",
   "fieldTypes": ["Text"],
   "parameters": {
     "installation": [
