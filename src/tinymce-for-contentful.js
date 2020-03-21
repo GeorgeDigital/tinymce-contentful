@@ -21,7 +21,8 @@ window.contentfulExtension.init(function(api) {
       // plugins: api.parameters.instance.plugins,
       // toolbar: tb,
       // menubar: mb,
-      
+       
+       readonly : 1,
        language: 'de',
   browser_spellcheck: true,
   plugins: 'paste code autolink image imagetools link media table hr lists wordcount',
